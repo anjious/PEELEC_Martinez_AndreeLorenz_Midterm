@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>Welcome to Anjious</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      color: white;
+    }
+
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 10px 10%;
+      background: transparent;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
+    }
+
+    .logo {
+      font-size: 45px;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .navbar a {
+      font-size: 18px;
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      margin-left: 30px;
+      transition: .3s;
+    }
+
+    .navbar a:hover{
+      color: lightseagreen;
+    }
+
+    .home {
+      height: 100vh;
+      background: url('web bg.png') no-repeat;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      padding: 0 10%; 
+    }
+
+    .home-content {
+      max-width: 600px;
+    }
+
+    .home-content h1 {
+      font-size: 40px;
+      font-weight: 700;
+    }
+
+    .home-content h3 {
+      font-size: 32px;
+      font-weight: 700;
+      background: linear-gradient(to right, white, lightseagreen);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .home-content p {
+      font-size: 16px;
+    }
+
+    .home-sci {
+      position: absolute;
+      bottom: 40px;
+      width: 170px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .home-sci a {
+      display: inline-flex;
+      width: 40px;
+      height: 40px;
+      background: transparent;
+      border: 2px solid lightseagreen;
+      border-radius: 50%;
+      font-size: 20px;
+      color: white;
+      text-decoration: none;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      transition: .5s;
+    }
+
+    .home-sci a:hover {
+      color: #081b29;
+    }
+
+    .home-sci a::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background: lightseagreen;
+      z-index: -1;
+      transition: .5s;
+    }
+
+    .home-sci a:hover::before {
+      width: 100%;
+    }
+
+    /* Section styles */
+    section {
+      padding: 80px 10%;
+      color: white;
+      background-color: #081b29;
+    }
+
+    .about-content, .education-content, .skills-content, .contact-content {
+      max-width: 700px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: lightseagreen;
+    }
+
+    p, ul {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #f0f0f0;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+      font-weight: 500;
+    }
+
+    .contact-content a {
+      color: lightseagreen;
+      text-decoration: none;
+    }
+
+    .contact-content a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <a href ="#" class="logo"> Anjious. </a>
+    <nav class="navbar"> 
+      <a href="#home" class="active">Introduction</a>
+      <a href="#about">About me</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="home" id="home">
+    <div class="home-content">
+      <h1>Hey there! I'm Al Martinez</h1>
+      <h3>Full Stack Developer | Video Editor</h3>
+      <p>My full name is Andree Lorenz Martinez. I'm a young student balancing college studies and freelance work in video editing. I live in Lapu-Lapu City, Cebu, Philippines. I bring energy and dedication to every project I take on. I take pride in maintaining a strong presence both in my personal and professional life. In my free time, I enjoy exploring creative pursuits, learning web development, and spending time with friends and family. I’m excited to bring my passion for creativity to new opportunities.</p>
+    </div>
+    <div class="home-sci">
+      <a href="#"><i class='bx bxl-facebook-square'></i></a>
+      <a href="#"><i class='bx bxl-instagram'></i></a>
+      <a href="#"><i class='bx bxl-youtube'></i></a>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="about-content">
+      <h2>About Me</h2>
+      <p>Hello! I'm Andree Lorenz Martinez, also known as Al. I'm a passionate Full Stack Developer and Video Editor, committed to bringing my projects to life with creativity and a detail-oriented approach. My journey has been one of learning and growing, balancing college and work with a constant thirst for knowledge. I take pride in every project I complete, no matter the scale, because each one represents a piece of my creative journey.</p>
+    </div>
+  </section>
+
+  <section class="education" id="education">
+    <div class="education-content">
+      <h2>Education</h2>
+      <p>Currently pursuing a degree in Information Technology at Cebu Technological University with a focus on web development and data structures, my education has provided me with a solid foundation to explore the world of tech. Every semester, I strive to broaden my skills and knowledge, bringing them directly into my projects and work experiences.</p>
+    </div>
+  </section>
+
+  <section class="skills" id="skills">
+    <div class="skills-content">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML and CSS</li>
+        <li>Python, C, Java</li>
+        <li>Video Editing (Capcut)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="contact-content">
+      <h2>Contact</h2>
+      <p>If you'd like to connect, feel free to reach out via my social channels or drop me an email at <a href="martinez.andrelorenz@gmail.com">martinez.andrelorenz@gmail.com</a>.</p>
+    </div>
+  </section>
+
+</body>
+</html>
